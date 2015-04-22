@@ -1,0 +1,76 @@
+index.html
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title></title>
+	<link rel="stylesheet" href="">
+</head>
+
+
+
+<body>
+	<script  type="text/javascript">
+
+
+/* ejercicio 1
+
+Crear una clase computador y asignarle 5 atributos por defecto;
+
+*/
+
+function Computador() {
+
+	this.RAM = 8;
+	this.DD = 256;
+	this.CPU = 'Core I5';
+	this.marca = 'Apple';
+	this.modelo = 'Macbook';
+}
+
+
+
+/*  
+Ejercicio 2 
+Crear 3 instacncias de la clase computador.
+Instancia 1: agregarle mas RAM.
+Instancia 2: aumentar espacio en disco duro.
+Instancia 3: cambiar el procesador.
+*/
+
+var C1 = new Computador();
+var C2 = new Computador();
+var C3 = new Computador();
+
+C1.RAM = 16;
+C2.DD = 512;
+C3.CPU = 'Core I7';
+
+//console.log(C1);
+//console.log(C2);
+//console.log(C3);
+
+
+
+/*
+Ejercicio 3
+Inprimir de la instancia 1 solmente la ram.
+Inprimir de la instancia 2 el disco y la  ram.
+Inprimir de la instancia 3 completa.
+ */
+
+console.log(C1.RAM);
+console.log(C2.RAM, C2.DD);
+console.log(C3);
+
+
+
+
+
+</script>
+</body>
+</html>
+
+
